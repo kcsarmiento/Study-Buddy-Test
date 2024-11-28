@@ -1,0 +1,96 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    android:padding="16dp">
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Study Buddy"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/dark_blue" />
+
+    <!-- Task Stats -->
+    <LinearLayout
+        android:id="@+id/statsContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/appTitle"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/taskCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20+"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_blue" />
+
+        <TextView
+            android:id="@+id/taskDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Number of Tasks"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/dark_blue" />
+
+        <TextView
+            android:id="@+id/taskDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jan 25, 2025"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/dark_blue" />
+    </LinearLayout>
+
+    <!-- Bottom Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dark_blue"
+        android:padding="8dp"
+        android:gravity="center">
+
+        <!-- Notes Icon -->
+        <ImageView
+            android:id="@+id/navNotes"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_notes"
+            android:contentDescription="Notes" />
+
+        <!-- Add Task Icon -->
+        <ImageView
+            android:id="@+id/navAddTask"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_add_task"
+            android:contentDescription="Add Task"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Calendar Icon -->
+        <ImageView
+            android:id="@+id/navCalendar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_calendar"
+            android:contentDescription="Calendar" />
+    </LinearLayout>
+
+</RelativeLayout>

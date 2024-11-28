@@ -1,0 +1,86 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Task Title Input -->
+        <EditText
+            android:id="@+id/taskTitleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Task Title"
+            android:padding="8dp" />
+
+        <!-- Task Description Input -->
+        <EditText
+            android:id="@+id/taskDescriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Task Description"
+            android:padding="8dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Task ID Input -->
+        <EditText
+            android:id="@+id/taskIdEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Task ID (for Update/Delete)"
+            android:padding="8dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Buttons -->
+        <Button
+            android:id="@+id/addTaskButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Task"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/updateTaskButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Task"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/deleteTaskButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Task"
+            android:layout_marginTop="8dp" />
+
+        <!-- Navigation Buttons -->
+        <Button
+            android:id="@+id/calendarButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Calendar"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/notesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Notes"
+            android:layout_marginTop="8dp" />
+
+        <!-- Task List Display -->
+        <TextView
+            android:id="@+id/taskListTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="No Tasks Available"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
