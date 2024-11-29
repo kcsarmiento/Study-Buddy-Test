@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="light_blue">#E3F2FD</color>
-    <color name="dark_blue">#0D47A1</color>
-</resources>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:color="#0D47A1" />
+    <item android:color="#E3F2FD" />
+</selector>

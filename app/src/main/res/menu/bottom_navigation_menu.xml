@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navAnalytics"
+        android:icon="@drawable/ic_analytics"
+        android:title="Analytics" />
+
+    <item
+        android:id="@+id/navTimer"
+        android:icon="@drawable/ic_timer"
+        android:title="Timer" />
+
+    <item
+        android:id="@+id/navAddTask"
+        android:icon="@drawable/ic_add_task"
+        android:title="Add Task" />
+
+    <item
+        android:id="@+id/navNotes"
+        android:icon="@drawable/ic_notes"
+        android:title="Notes" />
+
+    <item
+        android:id="@+id/navCalendar"
+        android:icon="@drawable/ic_calendar"
+        android:title="Calendar" />
+</menu>
